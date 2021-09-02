@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terza Esercitazione</title>
+    <style>
+        ol {
+  margin: 0 0 1.5em;
+  padding: 0.5em;
+  counter-reset: item;
+  border: 1px solid black;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+div{
+    border:1px solid black;
+    padding:1em;
+}
+    </style>
+</head>
+<body>
+    
+    <ol >
+        <p>Implementare i seguenti metodi</p>
+        <li>Il metodo <code>celsius</code> che restituisce l'equivalente Celsius di una temperatura Fahrenheit usando il calcolo:<br>
+            C = 5.0 / 9.0 * (F - 32);
+        </li>
+        <li>Il metodo <code>fahrenheit</code> che restituisce l'equivalente Fahrenheit di una temperatura Celsius usando il calcolo:<br>
+            C = 9.0 / 5.0 * C + 32;</li>
+        <li>Utilizzare questi metodi per scrivere un'applicazione che permette all'utente di inserire
+            una temperatura Fahrenheit per vederne poi visualizzato l'equivalente Celsius, oppure di inserire
+            una temperatura Celsius per vederne poi visualizzato l'equivalente Fahrenheit.
+        </li>
+    </ol>
+
+    <div>
+        Scrivere un programma che aiuti uno studente di scuola elementare ad apprendere la moltiplicazione.
+        Utilizzare un oggetto <code>Random</code> per produrre due interi positivi composti da una cifra.
+        Visualizzare una domanda come:
+        <pre>
+Quanto fa 6 per 7?
+        </pre>
+        In seguito lo studente digiterà la risposta e il programma la controllerà. Se è corretta, 
+        visualizzare <code>"Molto bene!"</code> e sottoponete un'altra domanda; se è sbagliata,
+        visualizzate <code>"No, Riprova"</code> e lasciare che lo studente provi ancora la stessa
+        domanda. Per generare ogni nuova domanda deve essere generato un metodo separato.
+    </div>
+
+
+
+    <ol>
+        <p>Un numero intero è detto primo se è divisibile soltanto per 1 e per sé stesso. Per esempio,
+            2,3,5 e 7 sono primi, mentre 4,6,8 e 9 non lo sono.
+        </p>
+        <li>Scrivere un metodo che determini se un numero è primo</li>
+        <li>Utilizzare questo metodo in un'applicazione che determini e visualizzi tutti i numeri
+            primi tra 1 e 10000. Ci sono numeri che possono essere esclusi dal test? </li>
+        <li>Inizialmente si potrebbe pensare che n/2 sia il limite superiore che dovrete verificare
+            per vedere se un numero è primo, ma in realtà basterà arrivare alla radice quadrata di n
+             come si potrebbe dimostrare. Riscrivere il programma con questa miglioria ed eseguirlo
+             in entrambi i modi. Valutare il miglioramento delle prestazioni.
+        </li>
+    </ol>
+
+    <div style="margin-bottom:1em">
+        Scrivere un metodo che prende una valore intero e lo restituisce dopo avere invertito 
+        le sue cifre. Per esempio dato il numero 7631, il metodo dovrà restituire 1367. Inserire
+        questo metodo in un'applicazione che legge un valore immesso dall'utente e visualizza il risultato.
+        Il numero inserito dall'utente può avere qualunque grandezza nei limiti rappresentabili per
+        un intero in Java.
+        (Suggerimento:  Usare insieme modulo e divisione per estrarre le varie cifre del numero)
+    </div>
+
+    
+    <div>   
+        <p>
+            Un numero intero è detto <code>numero perfetto</code> qualora la somma dei suoi fattori,
+            incluso 1 (ma non sè stesso), è pari a quel numero. Per esempio 6 è un numero perfetto 
+            perchè 6 = 1+2+3  .  Scrivere un metodo <code>perfect</code> che determini se il parametro
+            <code>number</code> è un numero perfetto. Utilizzare questo metodo in un'applicazione che 
+            determini e visualizzi tutti i numeri perfetti da 1 a 1000. Visualizzare i fattori di ogni 
+            numero perfetto, per confermare che lo sia veramente. Sfidare la potenza del vostro computer,
+            provando ad utilizzare numeri maggiori di 1000.
+        </p>
+    </div>
+
+    
+
+   
+
+    
+
+
+</body>
+</html>

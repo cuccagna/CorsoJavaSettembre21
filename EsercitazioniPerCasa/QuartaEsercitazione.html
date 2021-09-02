@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarta Esercitazione</title>
+    <style>
+        ol {
+  margin: 0 0 1.5em;
+  padding: 0.5em;
+  counter-reset: item;
+  border: 1px solid black;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+div{
+    border:1px solid black;
+    padding:1em;
+    margin-bottom:1em;
+}
+    </style>
+</head>
+<body>
+    
+    
+    
+
+    <div>   
+        Modificare la classe Account (esercizio sul conto corrente) in modo da fornire
+        un metodo chiamato <code>debit</code> che addebita una somma di denaro su un conto.
+        Assicuratevi che l'importo da addebitare non superi il saldo del conto. In caso contrario,
+        il saldo deve rimanere invariato e il metodo deve visualizzare un messaggio che   
+        dice "l'importo da addebitare supera il saldo disponibile". Modificate quindi
+        la classe AccountTest per collaudare il nuovo metodo <code>debit</code> 
+        
+    </div>
+
+    <div>
+        Creare una classe Impiegato che contiene 3 informazioni come variabili
+        d'istanza: il nome (tipo String), il cognome (tipo String) e la paga mensile
+        (tipo double). La classe dovrebbe avere un costruttore che inizializza le 
+        tre variabili d'istanza. Fornire quindi dei metodi get e set per ogni variabile
+        d'istanza. Se la paga mensile è negativa, impostarla a zero. Scrivere un'applicazione
+        di test <code>ImpiegatoTest</code> che collauda la classe <code>Impiegato</code>.
+        Creare quindi due oggetti <code>Impiegato</code> e visualizzare il salario annuale
+        di ciascuno di essi; poi dare un aumento del 10% alla paga mensile di ogni <code>Impiegato</code>
+        e tornare a visualizzare il salario annuale.
+    </div>
+
+    <div>
+        Creare una classe Motorino e pensare quali campi (variabili d'istanza)
+        e metodi potrebbe avere. Implementare per ciascuno dei campi i metodi
+        set e get. Creare uno costruttore che inizializza opportunamente i campi.
+        Creare un metodo di stampa che stampa le variabili d'istanza (ed anche ciò
+        che eventualmente tornano i metodi se lo si ritiene opportuno).
+        Creare una classe di test che crea due oggetti della classe Motorino, 
+        inizializzarli. Chiamare i metodi, anche i set dei campi.
+         E chiamare la funzione che fa la stampa.
+    </div>
+
+
+
+   
+
+    
+
+
+</body>
+</html>

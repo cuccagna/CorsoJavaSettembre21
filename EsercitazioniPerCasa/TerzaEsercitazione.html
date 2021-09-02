@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terza Esercitazione</title>
+    <style>
+        ol {
+  margin: 0 0 1.5em;
+  padding: 0.5em;
+  counter-reset: item;
+  border: 1px solid black;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+div{
+    border:1px solid black;
+    padding:1em;
+}
+    </style>
+</head>
+<body>
+    
+    <ol >
+        <p>Scrivere un'istruzione o un'insieme di istruzioni Java per eseguire ciascuno dei seguenti compiti</p>
+        <li>Sommare i numeri dispari compresi tra 1 e 99 usando un'istruzione for. Assumere di avere già dichiarato (senza averle inizializzate) le variabili intere sum e count</li>
+        <li>Calcolare il valore 2,5 elevato alla terza usando il metodo Math.pow</li>
+        <li>Stampare i numeri interi compresi tra 1 e 20 usando un ciclo while e una variabile contatore i. Assumere che tale variabile sia già dichiarata, ma non inizializzata. Stampare solo 5 numeri per riga. [Suggerimento: usate il calcolo i%5. Quando il valore di questa espressione è 0, stampate un carattere di nuova riga</li>
+        <li>Ripetere il punto 3) usando questa volta un'istruzione for</li>
+    </ol>
+
+    <ol >
+        <p>Trovare gli errori nei seguenti frammenti di codice e spiegre come correggerli.</p>
+        <li>
+<pre>
+    i = 1;
+while( i <= 10 );
+    i++;
+}
+</pre>
+        </li>
+<pre>
+    for( k = 0.1 ; k != 1.0 ; k+=0.1)
+        System.out.println(k);
+</pre>
+        <li>
+<pre>
+    switch( n )
+    {
+        case 1:
+            System.out.println( "Il numero è 1" );
+        case 2:
+            System.out.println( "Il numero è 2" );
+            break;
+        default:
+            System.out.println( "Il numero non è nè 1 nè 2" );
+            break;
+    }
+</pre>
+        </li>
+        <li><span>Il seguente codice dovrebbe visualizzare i numeri compresi tra 1 e 10</span>
+<pre>
+    int n = 1;
+
+while( n<10)
+     System.out.println( n++ );
+</pre>
+        </li>
+        
+    </ol>
+
+
+
+    <ol>
+        <p>Supponi che i=1,j=2,k=3,m=2. Cosa visualizzera ciascuna delle seguenti istruzioni?</p>
+        <li>Sistem.out.println( i == 1);</li>
+        <li>Sistem.out.println( j == 3); </li>
+        <li>Sistem.out.println( i >= 1 &amp;&amp; j &lt; 4);</li>
+        <li>Sistem.out.println( m&lt;=99 &amp; k &lt; m);</li>
+        <li>Sistem.out.println( j >= 1 || k == m);</li>
+        <li>Sistem.out.println( k + m &lt; j | 3-j &gt;= k);</li>
+        <li>Sistem.out.println( !(k &gt; m) );</li>
+    </ol>
+
+    <div style="margin-bottom:1em">
+        Scrivere un programma che chieda all'utente quanti numeri interi vuole inserire.
+        Poi glieli fa inserire e determina il più piccolo di essi.
+    </div>
+
+    <div style="margin-bottom:1em">
+        Calcolare il valore di pi greco usando la serie infinita:
+<pre>
+    &pi; = 4 - 4/3 + 4/5 - 4/7 + 4/9 - 4/11 +...
+</pre>
+
+        Visualizzare una tabella che mostri i valori di &pi; approssimati a un termine, due termini, tre termini della serie e così via. Quanti termini della serie si devono usare prima di arrivare a 3.14? e a 3.141? a 3.1415? a 3.14159?
+    </div>
+
+    <div>   
+        Un triangolo rettangolo può avere per lati tutti numeri interi. I tre valori formano la cosiddetta tripla pitagorica. I tre valori devono soddisfare la seguente condizione: la somma dei quadrato costruiti sui due cateti deve eguagliare
+        il quadrato costruito sull'ipotenusa.
+        <p>
+            Scrivete un'applicazione che trovi tutte le triple pitagoriche per i cateti
+            <code>cateto1</code> e <code>cateto2</code> e per l'ipotenusa <code>ipotenusa</code>,
+            per valori tutti minori di 500. Utilizzate un ciclo for a tre livelli di nidificazione
+            ,che verifica tutte le possibilità. Questo è un esempio di <strong>calcolo bruto</strong>,
+            cioè per tentativi. Per molti problemi, infatti, non è stato ancora trovato un algoritmo
+            risolutivo, per cui non rimane che utilizzare un approccio di questo tipo.
+        </p>
+    </div>
+
+    
+
+   
+
+    
+
+
+</body>
+</html>

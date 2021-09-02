@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terza Esercitazione</title>
+    <style>
+        ol {
+  margin: 0 0 1.5em;
+  padding: 0.5em;
+  counter-reset: item;
+  border: 1px solid black;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+div{
+    border:1px solid black;
+    padding:1em;
+}
+    </style>
+</head>
+<body>
+    
+    <ol >
+        <p>Scrivere dei programmi Java per</p>
+        <li>Dichiarare e inizializzare un array di caratteri <code>f</code> e poi 
+            visualizzare il settimo elemento
+        </li>
+        <li>Dichiarare un array <code>g</code> di dimensione 5. Poi impostarne 
+            tutti i valori a 8</li>
+        <li>Creare un array di 100 elementi double.  Poi inizializzarlo con valori 
+            casuali compresi tra 0 (incluso) e 10 (escluso)  (usa Math.random()  che torna
+            valori decimali compresi tra 0(incluso) ed 1 (escluso)). Visualizzare questi 
+            elementi e calcolarne la somma (visualizzare anche la somma)
+        </li>
+        <li>
+            Dichiara du e array di interi <code>a</code> che contiene 11 elementi e <code>b</code> che 
+            ne contiene 34. Inizializzarli entrambi con numeri casuali. Copia gli 11 elementi 
+            dell'array <code>a</code> nella corrispondente parte iniziale dell'array <code>b</code>. 
+
+        </li>
+
+        <li>
+            Crea un array double di 99 elementi ed inizializzalo a valori casuali. 
+            Infine trova l'elemento con il valore più grande e quello con il valore più piccolo. 
+      
+        </li>
+    </ol>
+
+    <div>
+        Leggere 5 numeri interi compresi tra 10 e 100. Per ogni numero letto, visualizzarlo 
+        solo se esso non è stato  già immesso in precedenza. Utilizzare l'array più piccolo 
+        possibile per risolvere il problema. Visualizzare l'insieme completo di valori 
+        unici dopo ogni inserimento di un nuovo valore da parte dell'utente
+    </div>
+    
+
+
+</body>
+</html>

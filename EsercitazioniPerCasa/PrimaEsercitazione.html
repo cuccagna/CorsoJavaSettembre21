@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prima Esercitazione</title>
+    <style>
+        ol {
+  margin: 0 0 1.5em;
+  padding: 0.5em;
+  counter-reset: item;
+  border: 1px solid black;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+div{
+    border:1px solid black;
+    padding:1em;
+}
+    </style>
+</head>
+<body>
+    
+    <ol >
+        <p>Assumendo che x = 2 e y= 3, che cosa visualizzano le seguenti istruzioni?</p>
+        <li>System.out.printf("x = %d\n",x);</li>
+        <li>System.out.printf("Il valore di %d + %d è %d\n",x,x,(x+x));</li>
+        <li>System.out.printf( "x =");</li>
+        <li>System.out.printf("%d = %d\n",(x+y),(y+x));</li>
+    </ol>
+
+    <ol >
+        <p>Quali delle seguenti istruzioni Java contengono variabili i cui valori vengono distrutti (cioè modificati o sostituiti)?</p>
+        <li>p = i + j + k +7;</li>
+        <li>System.out.printf("Queste sono variabili i cui valori verranno distrutti?");</li>
+        <li>System.out.printf( "a=5" );</li>
+        <li>value= input.nextInt();</li>
+    </ol>
+
+    <ol>
+        <p>Stabilire l'ordine di calcolo degli operatori in queste istruzioni e mostrare il valore x dopo l'esecuzione di ognuna di esse</p>
+        <li>x = 7 + 3 *6 / 2 -1;</li>
+        <li>x = 2 % 2 + 2 * 2 - 2 / 2; </li>
+        <li>x = ( 3 * 9 * ( 3 + ( 9 * 3 / (3))));</li>
+    </ol>
+
+    <div>
+        Scrivere un programma che chieda all'utente di digitare due numeri interi,
+        legga i due numeri e ne visualizzi la somma, il prodotto , la differenza e il quoziente.
+    </div>
+
+    <div>
+        Scrivere un programma che chiede all'utente di inserire due numeri interi e ne
+         determina chi è il più grande è visualizzi quel numero seguito da "è il più grande".
+         Se i numeri sono uguali visualizzi il messaggio "i numeri sono uguali".
+    </div>
+
+    <div>
+        Scrivere un'applicazione che chieda all'utente di inserire 3 numeri e poi visualizzi
+        la somma,la media,il prodotto, il più piccolo ed il più grande di questi tre numeri
+        <p>(La media per ora va bene se non restituisce un numero con la virgola)</p>
+    </div>
+
+    <div>Scrivere un'applicazione che legga un numero intero e determini se 
+        è pari o dispari.
+    </div>
+
+    <div>Scrivere un'applicazione che legge due numeri interi e ne determini se il
+        primo è multiplo del secondo (Suggerimento: usare l'operatore modulo)
+    </div>
+
+    <div>Scrivere un'applicazione che visualizzi una scacchiera così:
+        <pre>
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+        </pre>
+    </div>
+
+    <div>
+        
+        Scrivere un'applicazione che dichiara due numeri interi  e li inizializza
+        a un valore a tua scelta ad esempio 
+        <pre>
+            int num1=3; 
+            int num2=5;
+        </pre>
+        e ne scambi i valori di modo che alla fine num1 abbia il valore di num2
+        (5 nell'esempio) e num2 quello di num1 (valore 3 nell'esempio).
+    </div>
+
+</body>
+</html>

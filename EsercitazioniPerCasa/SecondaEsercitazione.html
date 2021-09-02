@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seconda Esercitazione</title>
+    <style>
+        ol {
+  margin: 0 0 1.5em;
+  padding: 0.5em;
+  counter-reset: item;
+  border: 1px solid black;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+div{
+    border:1px solid black;
+    padding:1em;
+    margin-bottom:1em;
+}
+    </style>
+</head>
+<body>
+    
+    
+
+    <div>
+        Scrivete un programma che legga tre valori diversi da zero indicati dall'utente e determini
+        se questi valori possono rappresentare i lati di un triangolo
+        (Suggerimento:
+        3 numeri sono i lati di un triangolo se il più grande dei lati è minore della somma
+        degli altri due)
+    </div>
+
+    <div>
+        Modificare il seguente codice in modo da dare in uscita il codice indicato. L'unica modifica
+        possibile è l'inserimento di parentesi graffe (è anche possibile che non occorrano modifiche).
+        Il codice(che non è stato indentato per renderti le cose più complicate) è:
+<pre>
+if( y == 8)
+if( x == 5 )
+System.out.println("@@@@@");
+else
+System.out.println("#####");
+System.out.println("$$$$$");
+System.out.println("&&&&&");
+
+<ol style="border:0;">
+    <li>Ipotizzando x = 5 e y = 8, fare le modifiche al codice sopra in modo che sia generato il seguente output.
+    <div style="border:none;padding:0;">
+    @@@@@
+    $$$$$
+    &&&&&
+    </div>
+    </li>
+
+    <li>Ipotizzando x = 5 e y = 8, fare le modifiche al codice sopra in modo che sia generato il seguente output.
+    <div style="border:none;padding:0;">
+    @@@@@
+    </div>
+        </li>
+
+    <li>Ipotizzando x = 5 e y = 8, fare le modifiche al codice sopra in modo che sia generato il seguente output.
+    <div style="border:none;padding:0;">
+    @@@@@
+    &&&&&
+    </div>
+        </li>
+
+    <li>Ipotizzando x = 5 e y = 8, fare le modifiche al codice sopra in modo che sia generato il seguente output.
+    <div style="border:none;padding:0;">
+    #####
+    $$$$$
+    &&&&&
+    </div>
+        </li>
+</ol>
+</pre>
+    </div>
+
+    <div>
+        Scrivere un programma che calcola e visualizza la somma dei primi 10 numeri interi
+    </div>
+
+    <div>
+        Scrivere un programma che usa un while per visualizzare il seguente insieme di valori:
+    <pre>
+    N   10*N    100*N   1000*N
+    1   10      100     1000
+    2   20      200     2000
+    3   30      300     3000
+    4   40      400     4000
+    5   50      500     5000
+    </pre>
+    </div>
+
+    <div>
+        Scrivere un programma che legga la misura del lato di un quadrato e visualizzi un
+        quadrato composto da asterischi. Il programma deve funzionare per qualsiasi
+        numero intero da 1 a 20
+    </div>
+
+    
+
+    <div>Scrivere un'applicazione che visualizzi una scacchiera così usando un ciclo while:
+        <pre>
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+        </pre>
+    </div>
+
+    
+
+</body>
+</html>
