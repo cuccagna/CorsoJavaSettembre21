@@ -1,0 +1,10 @@
+A B123XJ Ricotta 4,5 08/12/2021
+N F153RX Spazzolino 3,5 Nylon
+A G123XM Mascarpone 5 10/12/2021
+A F356IN Nutella 3,2 05/04/2022
+N J896UN Dentifricio 2,2 Fluoro
+A L821OR Pandoro 3,5 08/04/2022
+N K564IR Colluttorio 4 Acqua
+A K163XL Marmellata 2,5 07/03/2022
+A B123XJ Bresaola 3,99 08/12/2021
+N G923XJ Bicchieri 0,99 Plastica
